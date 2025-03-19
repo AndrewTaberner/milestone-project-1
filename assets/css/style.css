@@ -5,7 +5,7 @@
 :root {
   --primary-font: "Big Shoulders", sans-serif;
   --secondary-font: "Orbitron", cursive;
-  --primary-color: #02083f;
+  --primary-color: #ebebeb;
   --secondary-color: #aa9581;
   --highlight-color: #416a8e;
   --highlight-color-light: #7a9fc2;
@@ -57,6 +57,12 @@ a.nav-link {
   width: 100%;
   background: url("../images/background-image.jpg") no-repeat center
     center/cover;
+}
+
+.container1 {
+  text-align: center;
+  border: none;
+  padding: 5rem;
 }
 
 /* grid visualisation CSS for testing */
