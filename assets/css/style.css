@@ -57,6 +57,8 @@ a.nav-link {
   width: 100%;
   background: url("../images/background-image.jpg") no-repeat center
     center/cover;
+  background-color: rgba(158, 26, 26, 0.5);
+  background-blend-mode: overlay;
 }
 
 #hero-gallery {
@@ -64,6 +66,8 @@ a.nav-link {
   width: 100%;
   background: url("../images/lamborghini\ _aventador.jpg") no-repeat center
     center/cover;
+  background-color: rgba(158, 26, 26, 0.5);
+  background-blend-mode: overlay;
 }
 
 .container1 {
