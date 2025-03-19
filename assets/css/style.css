@@ -1,0 +1,72 @@
+/* Google fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Orbitron:wght@400..900&display=swap");
+
+/* CSS Variables */
+:root {
+  --primary-font: "Big Shoulders", sans-serif;
+  --secondary-font: "Orbitron", cursive;
+  --primary-color: #02083f;
+  --secondary-color: #aa9581;
+  --highlight-color: #416a8e;
+  --highlight-color-light: #7a9fc2;
+}
+
+/* Global styles */
+
+body {
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
+
+#navbar {
+  background-color: red;
+}
+
+#navbar .container {
+  border: none;
+}
+
+.logo {
+  height: 50px;
+}
+
+a.nav-link {
+  font-family: var(--primary-font);
+}
+
+/* Hero Section */
+#hero {
+  height: 600px;
+  width: 100%;
+  background: url("../images/background-image.jpg") no-repeat center
+    center/cover;
+}
+
+/* grid visualisation CSS for testing */
+
+.container,
+.row {
+  border: 2px solid black;
+}
+
+.col-12 {
+  border: 2px solid white;
+  background-color: lightgray;
+}
