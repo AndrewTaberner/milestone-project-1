@@ -52,10 +52,17 @@ a.nav-link {
 }
 
 /* Hero Section */
-#hero {
+#hero-home {
   height: 600px;
   width: 100%;
   background: url("../images/background-image.jpg") no-repeat center
+    center/cover;
+}
+
+#hero-gallery {
+  height: 600px;
+  width: 100%;
+  background: url("../images/lamborghini\ _aventador.jpg") no-repeat center
     center/cover;
 }
 
