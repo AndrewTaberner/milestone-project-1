@@ -55,8 +55,8 @@ a.nav-link {
 #hero-home {
   height: 600px;
   width: 100%;
-  background: url("../images/background-image.jpg") no-repeat center
-    center/cover;
+  background: url("../images/Lamborghini-Aventador-Roadster-TA.webp") no-repeat
+    center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
 }
@@ -64,7 +64,7 @@ a.nav-link {
 #hero-gallery {
   height: 600px;
   width: 100%;
-  background: url("../images/lamborghini\ -aventador.jpg") no-repeat center
+  background: url("../images/Speeding\ Red\ Car.jpg") no-repeat center
     center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
@@ -73,7 +73,7 @@ a.nav-link {
 .container1 {
   text-align: center;
   border: none;
-  padding: 5rem;
+  padding: 2.5rem;
 }
 
 /* grid visualisation CSS for testing */
