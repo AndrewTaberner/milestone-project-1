@@ -5,7 +5,7 @@
 :root {
   --primary-font: "Big Shoulders", sans-serif;
   --secondary-font: "Orbitron", cursive;
-  --primary-color: #ebebeb;
+  --primary-color: #ffffff;
   --secondary-color: #aa9581;
   --highlight-color: #416a8e;
   --highlight-color-light: #7a9fc2;
@@ -30,7 +30,7 @@ h2 {
 }
 
 h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Navbar */
@@ -79,7 +79,7 @@ a.nav-link {
 /* Footer / contact */
 #contact {
   background-color: red;
-  color: white;
+  color: black;
   box-shadow: 0px -4px 10px black; /* Shadow on top */
 }
 
