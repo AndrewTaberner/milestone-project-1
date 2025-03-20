@@ -37,6 +37,7 @@ h2 {
 
 #navbar {
   background-color: red;
+  box-shadow: 0 2px 2px #000000;
 }
 
 #navbar .container {
