@@ -70,6 +70,14 @@ a.nav-link {
   background-blend-mode: overlay;
 }
 
+#hero-gallery1 {
+  height: 600px;
+  width: 100%;
+  background: url("../images/Copper\ McLaren.jpg") no-repeat center center/cover;
+  background-color: rgba(158, 26, 26, 0.5);
+  background-blend-mode: overlay;
+}
+
 .container1 {
   text-align: center;
   border: none;
@@ -77,14 +85,17 @@ a.nav-link {
 }
 
 /* Footer / contact */
-#contact {
+footer {
   background-color: red;
   color: black;
-  box-shadow: 0px -4px 10px black; /* Shadow on top */
+  box-shadow: 0px -4px 10px black; /* shadow on top */
+  text-align: center;
 }
 
 table {
   background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #social-networks {

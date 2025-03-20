@@ -39,6 +39,18 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .carousel-item {
+        height: 100vh; /* Full screen height */
+        background-size: cover;
+        background-position: center;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+      }
+    </style>
   </head>
   <!-- Classes on body set to work with mt-auto on footer to ensure it always reamins at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
@@ -94,8 +106,52 @@
 
     <!--Main Content-->
     <main>
+      <!-- Carousel Start -->
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="hero-gallery1">
+            <div class="carousel-caption text-white">
+              <h1>WELCOME TO GT ELITE</h1>
+              <p>Your first stop for the drive of a lifetime!</p>
+              <a href="#" class="btn btn-primary">View our range</a>
+            </div>
+          </div>
+          <div class="carousel-item" id="hero-gallery">
+            <div class="carousel-caption text-white">
+              <h1>EXPERIENCE LUXURY</h1>
+              <p>Drive the world's finest supercars</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+          <div class="carousel-item" id="hero-home">
+            <div class="carousel-caption text-white">
+              <h1>UNFORGETTABLE RIDES</h1>
+              <p>Find the perfect car for your dream drive</p>
+              <a href="#" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- Carousel End -->
       <!-- hero section -->
-      <section id="hero-home">
+      <!-- <section id="hero-home">
         <div id="cover-text" class="container1">
           <h1>
             Welcome to GT Elite your first stop for the drive of a lifetime!!
@@ -103,22 +159,22 @@
           <a class="btn btn-primary btn-lg" href="gallery.html" role="button"
             >View our range</a
           >
-          <!-- <button type="button" class="btn btn-primary btn-lg">
+          <button type="button" class="btn btn-primary btn-lg">
             View our range
-          </button> -->
+          </button>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer section -->
-    <footer id="contact" class="mt-auto">
+    <footer id="footer" class="mt-auto">
       <div class="container section">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
             <h2 class="display-6">Contact us!</h2>
           </div>
           <!-- Contact info -->
-          <div class="col-12 col-md-6">
+          <div id="contact" class="col-12 col-md-6">
             <h3 class="sub-heading-color">Contact info</h3>
             <address>
               <strong
@@ -158,33 +214,33 @@
           </div>
 
           <!-- Opening times -->
-          <div class="col-12 col-md-6 col-xl-4">
+          <div id="open" class="col-12 col-md-6">
             <h3 class="sub-heading-color">Opening times</h3>
             <table>
               <thead>
                 <tr>
-                  <th scope="col">Day</th>
-                  <th scope="col">Open</th>
-                  <th scope="col">Close</th>
+                  <th class="text-start px-4">Day</th>
+                  <th class="text-start px-4S">Open</th>
+                  <th class="text-start px-4">Close</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Mon</th>
-                  <td colspan="2">Closed</td>
+                  <th class="text-start px-4">Mon</th>
+                  <td colspan="1">Closed</td>
                 </tr>
                 <tr>
-                  <th scope="row">Tue - Thur</th>
+                  <th class="text-start px-4">Tue - Thur</th>
                   <td>11am</td>
                   <td>11pm</td>
                 </tr>
                 <tr>
-                  <th scope="row">Fri - Sat</th>
+                  <th class="text-start px-4">Fri - Sat</th>
                   <td>11am</td>
                   <td>12am</td>
                 </tr>
                 <tr>
-                  <th scope="row">Sun</th>
+                  <th class="text-start px-4">Sun</th>
                   <td>12pm</td>
                   <td>7pm</td>
                 </tr>
