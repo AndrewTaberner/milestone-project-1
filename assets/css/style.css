@@ -104,6 +104,21 @@ a.nav-link {
   background-blend-mode: overlay;
 }
 
+#hero-gallery2 {
+  height: 600px;
+  width: 100%;
+  background: url("../images/Carbon\ Meets\ Red.jpg") no-repeat center
+    center/cover;
+  background-color: rgba(158, 26, 26, 0.5);
+  background-blend-mode: overlay;
+  /* height: 100vh; Full screen height */
+  /* background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%); */
+}
+
 .container1 {
   text-align: center;
   border: none;
@@ -155,7 +170,7 @@ table {
 
 .address {
   text-align: start;
-  padding: 0 0 0 98px;
+  padding: 0 0 0 100px;
 }
 
 #social-networks {
@@ -183,3 +198,39 @@ table {
   border: 2px solid white;
   background-color: lightgray;
 } */
+
+/* small devices (mobiles, 375px and up) */
+@media screen and (min-width: 375px) {
+  /* Make all service cards same height for consistancy */
+  .address {
+    text-align: start;
+    padding: 0 0 0 125px;
+  }
+}
+
+/* small devices (mobiles, 425px and up) */
+@media screen and (min-width: 425px) {
+  /* Make all service cards same height for consistancy */
+  .address {
+    text-align: start;
+    padding: 0 0 0 148px;
+  }
+}
+
+/* medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  /* Make all service cards same height for consistancy */
+  .address {
+    text-align: start;
+    padding: 0 0 0 113px;
+  }
+}
+
+/* larger devices (laptops, 1024px and up) */
+@media screen and (min-width: 1024px) {
+  /* Make all service cards same height for consistancy */
+  .address {
+    text-align: start;
+    padding: 0 0 0 213px;
+  }
+}
