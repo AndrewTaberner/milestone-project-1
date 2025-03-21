@@ -78,18 +78,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index.html#contact">Contact</a>
+              <a class="nav-link" href="index.html#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="quote.html">Request a quote</a>
+              <a class="nav-link active" href="quote.html">Request a quote</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -103,67 +101,100 @@
         </div>
       </div>
     </nav>
-
-    <!--Main Content-->
-    <main>
-      <!-- Carousel Start -->
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" id="hero-gallery1">
-            <div class="carousel-caption text-white">
-              <h1>WELCOME TO GT ELITE</h1>
-              <p>Your first stop for the drive of a lifetime!</p>
-              <a href="gallery.html" class="btn btn-primary">View our range</a>
-            </div>
-          </div>
-          <div class="carousel-item" id="hero-gallery">
-            <div class="carousel-caption text-white">
-              <h1>EXPERIENCE LUXURY</h1>
-              <p>Drive the world's finest supercars</p>
-              <a href="#contact" class="btn btn-primary">Contact us</a>
-            </div>
-          </div>
-          <div class="carousel-item" id="hero-home">
-            <div class="carousel-caption text-white">
-              <h1>UNFORGETTABLE RIDES</h1>
-              <p>Find the perfect car for your dream drive</p>
-              <a href="#" class="btn btn-primary">Request a quote</a>
-            </div>
-          </div>
+    <!-- header section -->
+    <header id="header" class="container section">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-xl-start">
+          <p id="quote">
+            <strong class="display-6">GT Elite – Request a quote</strong>
+          </p>
+          <p class="lead">Get Your Personalized quote Today!</p>
+          At GT Elite, we believe in delivering a premium car hire experience
+          tailored just for you. Whether you're looking for an exhilarating
+          supercar drive, an elegant vehicle for a special occasion, or a luxury
+          ride for a corporate event, we have the perfect car to suit your
+          needs. Simply fill out the form below, and our team will get back to
+          you with a customized quote based on your preferences.
         </div>
-        <!-- Carousel Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-      <!-- Carousel End -->
-      <!-- hero section -->
-      <!-- <section id="hero-home">
-        <div id="cover-text" class="container1">
-          <h1>
-            Welcome to GT Elite your first stop for the drive of a lifetime!!
-          </h1>
-          <a class="btn btn-primary btn-lg" href="gallery.html" role="button"
-            >View our range</a
-          >
-          <button type="button" class="btn btn-primary btn-lg">
-            View our range
-          </button>
+    </header>
+
+    <main>
+      <!-- Booking inquiry form section -->
+      <section id="booking-form" class="container section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <h2>Booking inquiry</h2>
+            <form action="success.html" method="get">
+              <div class="row">
+                <div class="col-12 col-lg-6 mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                  <label for="phone" class="form-label">Phone number</label>
+                  <input
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    type="number"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                  <label for="event-type" class="form-label"
+                    >Select vehicle</label
+                  >
+                  <select
+                    id="event-type"
+                    class="form-select"
+                    name="event-type"
+                    required
+                  >
+                    <option value="" selected>Select</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Maserati">Maserati Gran-Tourismo</option>
+                    <option value="Porsche">Porsche 911</option>
+                    <option value="McLaren">McLaren 720s</option>
+                    <option value="Ferrari">Ferrari F80</option>
+                    <option value="DBS">Aston Martin DBS</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    id="message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Submit request
+              </button>
+            </form>
+          </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer section -->
