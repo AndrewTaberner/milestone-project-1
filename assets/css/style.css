@@ -57,6 +57,17 @@ h2 {
   color: white;
 }
 
+.gallery-button-outline {
+  border: 3px solid var(--highlight-color-light);
+  padding: 7px 25px;
+  color: var(--highlight-color-light);
+}
+
+.gallery-button-outline:hover {
+  background-color: var(--highlight-color-light);
+  color: white;
+}
+
 /* Navbar */
 
 #navbar {
@@ -105,7 +116,7 @@ a.nav-link {
 }
 
 #hero-gallery2 {
-  height: 600px;
+  height: auto;
   width: 100%;
   background: url("../images/Carbon\ Meets\ Red.jpg") no-repeat center
     center/cover;
@@ -125,9 +136,26 @@ a.nav-link {
   padding: 2.5rem;
 }
 
+/* Gallery/Cards */
+#new-games {
+  padding-top: 87px;
+}
+
+.card-footer {
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 2 2 0 0;
+}
+
 /* Request a quote section*/
+#header {
+  padding-bottom: 5px;
+}
 #quote {
-  background-color: rgba(158, 26, 26, 0.5);
+  /* background-color: rgba(158, 26, 26, 0.5); */
+  padding-top: 97px;
 }
 
 #main {
