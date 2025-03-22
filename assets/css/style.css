@@ -127,7 +127,7 @@ a.nav-link {
 
 /* Request a quote section*/
 #quote {
-  padding-top: 100px;
+  background-color: rgba(158, 26, 26, 0.5);
 }
 
 #main {
@@ -140,16 +140,21 @@ a.nav-link {
   background: url("../images/Carbon\ Meets\ Metal.jpg") no-repeat center
     center/cover;
   color: white;
+  background-color: rgba(158, 26, 26, 0.5);
+  background-blend-mode: overlay;
 }
 
 /* Success section */
 
 #success {
   padding-top: 100px;
+  background: url("../images/Carbon\ Meets\ Metal.jpg") no-repeat center
+    center/cover;
+  color: white;
 }
 
 #thank-you {
-  color: black;
+  color: white;
 }
 
 /* Footer / contact */
@@ -173,20 +178,51 @@ table {
   padding: 0 0 0 100px;
 }
 
+/* Social Media Links */
+/* Social Media Links */
 #social-networks {
-  text-align: start;
-  padding: 4px 0;
   display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  padding: 10px 0;
+  list-style: none;
+}
+
+#social-networks li {
+  display: inline-block;
+}
+
+#social-networks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 
 #social-networks i {
-  font-size: 160%;
-  padding: 5%;
-  color: black;
+  font-size: 1.8rem;
+  color: black; /* Default icon color */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+/* Hover Effects - Change icon color */
+#social-networks a:hover i {
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Individual Social Media Colors on Hover */
+#social-networks a:nth-child(1):hover i {
+  color: #1877f2; /* Facebook Blue */
+}
+#social-networks a:nth-child(2):hover i {
+  color: #1da1f2; /* Twitter/X Blue */
+}
+#social-networks a:nth-child(3):hover i {
+  color: #ff0000; /* YouTube Red */
+}
+#social-networks a:nth-child(4):hover i {
+  color: #e4405f; /* Instagram Pink */
+}
 /* grid visualisation CSS for testing */
 
 /* .container,
