@@ -178,6 +178,17 @@ table {
   padding: 0 0 0 100px;
 }
 
+.phone-link {
+  color: #000000; /* Link is black */
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+.phone-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: none;
+}
+
 /* Social Media Links */
 /* Social Media Links */
 #social-networks {
