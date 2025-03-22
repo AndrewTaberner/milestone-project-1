@@ -106,18 +106,16 @@
       <!-- main element to hold all key sections of the game library page,
           it is not part of the grid structure -->
 
-      <!-- New Games section -->
+      <!-- Card Section -->
       <section id="new-games" class="container section">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="display-6">New games</h2>
-          </div>
+        <!-- Top row -->
+        <div class="row top-row gy-3">
           <div class="col-12 col-md-6 col-xl-3">
             <div id="card" class="card">
               <img
                 class="card-img-top"
                 src="assets/images/maserati_granturismo_trader.jpg"
-                alt="Picture of Maserati car"
+                alt="Picture of a Maserati GT"
               />
               <div class="card-body">
                 <h3 class="card-title sub-heading-color">
@@ -126,8 +124,8 @@
                 <p class="card-text">
                   <strong>specs:</strong>
                   <li>Engine: 3.0L twin-turbo V6</li>
-                  <li>Horsepower: 483 hp</li>
-                  <li>Transmission: Eight-speed automatic</li>
+                  <li>Horsepower: 483 bhp</li>
+                  <li>Transmission: 8-speed automatic</li>
                   <li>0-60 mph: 3.7 seconds</li>
                   <li>Top Speed: 188 mph</li>
                 </p>
@@ -142,19 +140,20 @@
           <div class="col-12 col-md-6 col-xl-3">
             <div class="card">
               <img
+                id="lambo"
                 class="card-img-top"
                 src="assets/images/Lamborghini-Aventador-Roadster-TA.webp"
-                alt="Picture of Lambourghini car"
+                alt="Picture of a Lambourghini Roadster"
               />
               <div class="card-body">
-                <h3 class="card-title sub-heading-color">Galaxy Pioneers</h3>
+                <h3 class="card-title sub-heading-color">Lambourghini TA</h3>
                 <p class="card-text">
                   <strong>specs:</strong>
-                  <li>Engine: 3.0L twin-turbo V6</li>
-                  <li>Horsepower: 483 hp</li>
-                  <li>Transmission: Eight-speed automatic</li>
-                  <li>0-60 mph: 3.7 seconds</li>
-                  <li>Top Speed: 188 mph</li>
+                  <li>Engine: 6.5L naturally aspirated V12</li>
+                  <li>Horsepower: 770 bhp</li>
+                  <li>Transmission: 7-speed ISR automatic</li>
+                  <li>0-60 mph: 2.9 seconds</li>
+                  <li>Top Speed: 218 mph</li>
                 </p>
                 <a
                   href="quote.html"
@@ -168,17 +167,77 @@
             <div class="card">
               <img
                 class="card-img-top"
-                src="/assets/images/maserati_granturismo_trader.jpg"
-                alt="Picture of Maserati car"
+                src="assets/images/porsche-911-trader.jpg"
+                alt="Picture of a Porsche 911"
               />
               <div class="card-body">
-                <h3 class="card-title sub-heading-color">Galaxy Pioneers</h3>
+                <h3 class="card-title sub-heading-color">Porsche 911</h3>
                 <p class="card-text">
-                  Utilise resources wisely, negotiate with alien species, and
-                  navigate cosmic events to expand your interstellar empire.
+                  <strong>specs:</strong>
+                  <li>Engine: 4.0L flat-six</li>
+                  <li>Horsepower: 444 bhp</li>
+                  <li>Transmission: 7-speed automatic</li>
+                  <li>0-60 mph: 3.0 seconds</li>
+                  <li>Top Speed: 194 mph</li>
                 </p>
-                <p><em>Number of players:</em> 2-4</p>
-                <p><em>Ages:</em> 12+</p>
+                <a
+                  href="quote.html"
+                  class="btn gallery-button-outline mb-5 btn-sm"
+                  >Request a quote</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets/images/mclaren_720s.jpg"
+                alt="Picture of a McLaren 720s"
+              />
+              <div class="card-body">
+                <h3 class="card-title sub-heading-color">McLaren 720s</h3>
+                <p class="card-text">
+                  <strong>specs:</strong>
+                  <li>Engine: 4.0L twin-turbocharged V8</li>
+                  <li>Horsepower: 710 bhp</li>
+                  <li>Transmission: 7-speed automatic</li>
+                  <li>0-60 mph: 2.8 seconds</li>
+                  <li>Top Speed: 212 mph</li>
+                </p>
+                <a
+                  href="quote.html"
+                  class="btn gallery-button-outline mb-5 btn-sm"
+                  >Request a quote</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Bottom row -->
+          <div class="row bottom-row"></div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="assets/images/ferrari-f8-tributo.jpg"
+                alt="Picture of a Ferrari-F8"
+              />
+              <div class="card-body">
+                <h3 class="card-title sub-heading-color">Ferrari F8</h3>
+                <p class="card-text">
+                  <strong>specs:</strong>
+                  <li>Engine: 4.0L twin-turbocharged V8</li>
+                  <li>Horsepower: 710 bhp</li>
+                  <li>Transmission: 7-speed automatic</li>
+                  <li>0-60 mph: 2.8 seconds</li>
+                  <li>Top Speed: 212 mph</li>
+                </p>
+                <a
+                  href="quote.html"
+                  class="btn gallery-button-outline mb-5 btn-sm"
+                  >Request a quote</a
+                >
               </div>
             </div>
           </div>
@@ -186,17 +245,24 @@
             <div class="card">
               <img
                 class="card-img-top"
-                src="/assets/images/maserati_granturismo_trader.jpg"
-                alt="Picture of Maserati car"
+                src="assets/images/rimac-nevera.avif"
+                alt="Picture of a Rimac Nevera"
               />
               <div class="card-body">
-                <h3 class="card-title sub-heading-color">Galaxy Pioneers</h3>
+                <h3 class="card-title sub-heading-color">Rimac Nevera</h3>
                 <p class="card-text">
-                  Utilise resources wisely, negotiate with alien species, and
-                  navigate cosmic events to expand your interstellar empire.
+                  <strong>specs:</strong>
+                  <li>Engine: 4 independent electric motors</li>
+                  <li>Horsepower: 1,914 bhp</li>
+                  <li>Transmission: 7-speed automatic</li>
+                  <li>0-60 mph: 1.74 seconds</li>
+                  <li>Top Speed: 258 mph</li>
                 </p>
-                <p><em>Number of players:</em> 2-4</p>
-                <p><em>Ages:</em> 12+</p>
+                <a
+                  href="quote.html"
+                  class="btn gallery-button-outline mb-5 btn-sm"
+                  >Request a quote</a
+                >
               </div>
             </div>
           </div>
@@ -204,35 +270,49 @@
             <div class="card">
               <img
                 class="card-img-top"
-                src="/assets/images/maserati_granturismo_trader.jpg"
-                alt="Picture of Maserati car"
+                src="assets/images/audi_r8.jpg"
+                alt="Picture of a Ferrari-F8"
               />
               <div class="card-body">
-                <h3 class="card-title sub-heading-color">Galaxy Pioneers</h3>
+                <h3 class="card-title sub-heading-color">Audi R8</h3>
                 <p class="card-text">
-                  Utilise resources wisely, negotiate with alien species, and
-                  navigate cosmic events to expand your interstellar empire.
+                  <strong>specs:</strong>
+                  <li>Engine: 4.0L twin-turbocharged V8</li>
+                  <li>Horsepower: 710 bhp</li>
+                  <li>Transmission: 7-speed automatic</li>
+                  <li>0-60 mph: 2.8 seconds</li>
+                  <li>Top Speed: 212 mph</li>
                 </p>
-                <p><em>Number of players:</em> 2-4</p>
-                <p><em>Ages:</em> 12+</p>
+                <a
+                  href="quote.html"
+                  class="btn gallery-button-outline mb-5 btn-sm"
+                  >Request a quote</a
+                >
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
-            <div class="card">
+            <div id="aston" class="card">
               <img
                 class="card-img-top"
-                src="/assets/images/maserati_granturismo_trader.jpg"
-                alt="Picture of Maserati car"
+                src="assets/images/bugatti-chiron.jpg"
+                alt="Picture of an Aston Martin DBS"
               />
               <div class="card-body">
-                <h3 class="card-title sub-heading-color">Galaxy Pioneers</h3>
+                <h3 class="card-title sub-heading-color">Bugatti Chiron</h3>
                 <p class="card-text">
-                  Utilise resources wisely, negotiate with alien species, and
-                  navigate cosmic events to expand your interstellar empire.
+                  <strong>specs:</strong>
+                  <li>5.2L twin-turbocharged V12</li>
+                  <li>Horsepower: 715 bhp</li>
+                  <li>Transmission: 8-speed automatic</li>
+                  <li>0-60 mph: 3.4 seconds</li>
+                  <li>Top Speed: 211 mph</li>
                 </p>
-                <p><em>Number of players:</em> 2-4</p>
-                <p><em>Ages:</em> 12+</p>
+                <a
+                  href="quote.html"
+                  class="btn gallery-button-outline mb-5 btn-sm"
+                  >Request a quote</a
+                >
               </div>
             </div>
           </div>

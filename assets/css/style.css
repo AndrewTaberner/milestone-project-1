@@ -141,12 +141,35 @@ a.nav-link {
   padding-top: 87px;
 }
 
+#aston {
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%; /* Make sure the image takes the full width of the card */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensures images fill the space while maintaining proportions */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
 .card-footer {
   text-transform: uppercase;
 }
 
 .card-body {
-  padding: 2 2 0 0;
+  padding: 1 1 0 0;
+}
+
+.card-img-top {
+  box-shadow: 0px 5px 5px black; /* Shadow on bottom */
 }
 
 /* Request a quote section*/
