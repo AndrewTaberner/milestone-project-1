@@ -69,7 +69,6 @@ h2 {
 }
 
 /* Navbar */
-
 #navbar {
   background-color: red;
   box-shadow: 0px 4px 10px black; /* Shadow on bottom */
@@ -100,7 +99,7 @@ a.nav-link {
 }
 
 #hero-gallery {
-  height: 600px;
+  height: 710px;
   width: 100%;
   background: url("../images/maserati.jpg") no-repeat center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
@@ -108,7 +107,7 @@ a.nav-link {
 }
 
 #hero-gallery1 {
-  height: 600px;
+  height: 710px;
   width: 100%;
   background: url("../images/Copper\ McLaren.jpg") no-repeat center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
@@ -122,12 +121,6 @@ a.nav-link {
     center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
-  /* height: 100vh; Full screen height */
-  /* background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%); */
 }
 
 .container1 {
@@ -186,8 +179,6 @@ a.nav-link {
 }
 
 #booking-form {
-  /* height: 500px;
-  width: 100%; */
   background: url("../images/Carbon\ Meets\ Metal.jpg") no-repeat center
     center/cover;
   color: white;
@@ -196,7 +187,6 @@ a.nav-link {
 }
 
 /* Success section */
-
 #success {
   padding-top: 100px;
   background: url("../images/Carbon\ Meets\ Metal.jpg") no-repeat center
@@ -215,7 +205,7 @@ a.nav-link {
   box-shadow: 0px -4px 10px black; /* shadow on top */
   text-align: center;
   position: relative;
-  z-index: 99; /* Higher than the carousel */
+  z-index: 1000; /* Higher than the carousel to allow box shadow to appear */
 }
 
 table {
@@ -236,7 +226,7 @@ table {
 }
 
 .phone-link:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #7a9fc2; /* Light blue on hover */
   text-decoration: none;
 }
 
@@ -247,7 +237,7 @@ table {
 }
 
 .email-link:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #7a9fc2; /* Light blue on hover */
   text-decoration: none;
 }
 
@@ -282,30 +272,10 @@ table {
   transform: scale(1.2); /* Slight zoom effect */
 }
 
-/* Individual Social Media Colors on Hover */
-#social-networks a:nth-child(1):hover i {
-  color: #1877f2; /* Facebook Blue */
+/* Individual Social Media Color on Hover */
+#social-networks a:hover i {
+  color: #1877f2;
 }
-#social-networks a:nth-child(2):hover i {
-  color: #1da1f2; /* Twitter/X Blue */
-}
-#social-networks a:nth-child(3):hover i {
-  color: #ff0000; /* YouTube Red */
-}
-#social-networks a:nth-child(4):hover i {
-  color: #e4405f; /* Instagram Pink */
-}
-/* grid visualisation CSS for testing */
-
-/* .container,
-.row {
-  border: 2px solid black;
-}
-
-.col-12 {
-  border: 2px solid white;
-  background-color: lightgray;
-} */
 
 /* small devices (mobiles, 375px and up) */
 @media screen and (min-width: 375px) {
