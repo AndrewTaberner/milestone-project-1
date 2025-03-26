@@ -90,8 +90,8 @@ a.nav-link {
 
 /* Hero Section */
 #hero-home {
-  height: 600px;
-  width: 100%;
+  /* height: 600px;
+  width: 100%; */
   background: url("../images/Lamborghini-Aventador-Roadster-TA.webp") no-repeat
     center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
