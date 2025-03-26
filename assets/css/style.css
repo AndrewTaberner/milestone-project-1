@@ -92,8 +92,6 @@ a.nav-link {
 
 /* Hero Section */
 #hero-home {
-  /* height: 600px;
-  width: 100%; */
   background: url("../images/Lamborghini-Aventador-Roadster-TA.webp") no-repeat
     center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
@@ -101,24 +99,18 @@ a.nav-link {
 }
 
 #hero-gallery {
-  /* height: 600px;
-  width: 100%; */
   background: url("../images/maserati.jpg") no-repeat center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
 }
 
 #hero-gallery1 {
-  /* height: 600px;
-  width: 100%; */
   background: url("../images/Copper\ McLaren.jpg") no-repeat center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
 }
 
 #hero-gallery2 {
-  /* height: auto;
-  width: 100%; */
   background: url("../images/Carbon\ Meets\ Red.jpg") no-repeat center
     center/cover;
   background-color: rgba(158, 26, 26, 0.5);
