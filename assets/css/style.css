@@ -72,7 +72,7 @@ h2 {
 
 /* Navbar */
 #navbar {
-  background-color: red;
+  background-color: #424242;
   box-shadow: 0px 4px 10px black; /* Shadow on bottom */
   position: fixed;
   z-index: 1000; /* Higher than the carousel */
@@ -83,11 +83,29 @@ h2 {
 }
 
 .logo {
-  height: 50px;
+  height: 85px; /* Adjust height */
+  width: auto; /* Maintain aspect ratio */
 }
 
 a.nav-link {
   font-family: var(--primary-font);
+}
+
+a.nav-link {
+  color: #ffffff;
+}
+
+/* Style for active nav link */
+nav a.active,
+nav a:focus {
+  color: white !important; /* Makes the active link white */
+  font-weight: bold; /* makes it stand out */
+  text-decoration: underline; /* adds an underline effect */
+}
+S #contact {
+  color: white !important; /* Ensures active links turn white */
+  font-weight: bold; /* Optional: makes it stand out */
+  text-decoration: underline; /* Optional: adds an underline effect */
 }
 
 /* Hero Section */
@@ -203,8 +221,8 @@ main {
 /* Footer / contact */
 #footer {
   font-family: var(--primary-font);
-  background-color: red;
-  color: black;
+  background-color: #424242;
+  color: white;
   box-shadow: 0px -4px 10px black; /* shadow on top */
   text-align: center;
   position: relative;
@@ -215,7 +233,7 @@ table {
   background-color: transparent;
   margin: 0 auto;
   text-align: center;
-  color: #000000;
+  color: white;
 }
 
 .address {
@@ -229,24 +247,24 @@ table {
 }
 
 .phone-link {
-  color: #000000; /* Link is black */
+  color: white; /* Link is white */
   /* text-decoration: underline; */
   transition: color 0.3s ease-in-out;
 }
 
 .phone-link:hover {
-  color: #7a9fc2; /* Light blue on hover */
+  color: #e0e0e0; /* Change shade on hover */
   text-decoration: none;
 }
 
 .email-link {
-  color: #000000; /* Link is black */
+  color: white; /* Link is white */
   /* text-decoration: underline; */
   transition: color 0.3s ease-in-out;
 }
 
 .email-link:hover {
-  color: #7a9fc2; /* Light blue on hover */
+  color: #e0e0e0; /* Change shade on hover */
   text-decoration: none;
 }
 
@@ -272,7 +290,7 @@ table {
 
 #social-networks i {
   font-size: 1.8rem;
-  color: black; /* Default icon color */
+  color: white; /* Default icon color */
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -283,7 +301,11 @@ table {
 
 /* Individual Social Media Color on Hover */
 #social-networks a:hover i {
-  color: #1877f2;
+  color: #e0e0e0;
+}
+
+.social-networks a {
+  text-decoration: none !important;
 }
 
 /* small devices (mobiles, 375px and up) */
