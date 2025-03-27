@@ -92,7 +92,7 @@ a.nav-link {
 
 /* Hero Section */
 #hero-home {
-  background: url("../images/Lamborghini-Aventador-Roadster-TA.webp") no-repeat
+  background: url("../images/lamborghini-aventador-roadster-ta.webp") no-repeat
     center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
@@ -105,13 +105,13 @@ a.nav-link {
 }
 
 #hero-gallery1 {
-  background: url("../images/Copper\ McLaren.jpg") no-repeat center center/cover;
+  background: url("../images/copper-mcLaren.jpg") no-repeat center center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
 }
 
 #hero-gallery2 {
-  background: url("../images/Carbon\ Meets\ Red.jpg") no-repeat center
+  background: url("../images/carbon-meets-red.jpg") no-repeat center
     center/cover;
   background-color: rgba(158, 26, 26, 0.5);
   background-blend-mode: overlay;
@@ -140,6 +140,8 @@ a.nav-link {
 
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  height: 468px;
+  width: 270px;
 }
 
 .card:hover {
@@ -152,7 +154,7 @@ a.nav-link {
 }
 
 .card-body {
-  padding: 1 1 0 0;
+  font-family: var(--primary-font);
 }
 
 .card-img-top {
@@ -161,6 +163,7 @@ a.nav-link {
 
 /* Request a quote section*/
 #header {
+  font-family: var(--primary-font);
   padding-bottom: 5px;
 }
 #quote {
@@ -170,6 +173,7 @@ a.nav-link {
 
 main {
   flex: 1;
+  font-family: var(--primary-font);
 }
 
 #main {
@@ -177,7 +181,7 @@ main {
 }
 
 #booking-form {
-  background: url("../images/Carbon\ Meets\ Metal.jpg") no-repeat center
+  background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
   color: white;
   background-color: rgba(158, 26, 26, 0.5);
@@ -187,7 +191,7 @@ main {
 /* Success section */
 #success {
   padding-top: 100px;
-  background: url("../images/Carbon\ Meets\ Metal.jpg") no-repeat center
+  background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
   color: white;
 }
@@ -198,6 +202,7 @@ main {
 
 /* Footer / contact */
 #footer {
+  font-family: var(--primary-font);
   background-color: red;
   color: black;
   box-shadow: 0px -4px 10px black; /* shadow on top */
@@ -210,6 +215,7 @@ table {
   background-color: transparent;
   margin: 0 auto;
   text-align: center;
+  color: #000000;
 }
 
 .address {
@@ -217,9 +223,14 @@ table {
   padding: 0 0 0 100px;
 }
 
+#address {
+  text-align: start;
+  padding: 0 0 0 100px;
+}
+
 .phone-link {
   color: #000000; /* Link is black */
-  text-decoration: underline;
+  /* text-decoration: underline; */
   transition: color 0.3s ease-in-out;
 }
 
@@ -230,7 +241,7 @@ table {
 
 .email-link {
   color: #000000; /* Link is black */
-  text-decoration: underline;
+  /* text-decoration: underline; */
   transition: color 0.3s ease-in-out;
 }
 
@@ -307,6 +318,6 @@ table {
   /* Make all service cards same height for consistancy */
   .address {
     text-align: start;
-    padding: 0 0 0 213px;
+    padding: 0 0 0 170px;
   }
 }
