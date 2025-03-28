@@ -130,8 +130,7 @@ S #contact {
 
 /* Hero Section */
 #hero-home {
-  background: url("../images/lamborghini-aventador-roadster-ta.webp") no-repeat
-    center center/cover;
+  background: url("../images/rimac-nevera.avif") no-repeat center center/cover;
   background-color: rgba(70, 61, 61, 0.9);
   background-blend-mode: overlay;
 }
@@ -223,7 +222,7 @@ main {
   color: white;
   padding-left: 0;
   margin-right: 0;
-  background-color: rgba(70, 61, 61, 0.9);
+  background-color: #463d3de6;
   background-blend-mode: overlay;
 }
 
