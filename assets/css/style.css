@@ -8,7 +8,7 @@
   --primary-color: #ffffff;
   --secondary-color: #aa9581;
   --highlight-color: #416a8e;
-  --highlight-color-light: #7a9fc2;
+  --highlight-color-light: #424242;
 }
 
 /* Global styles */
@@ -83,7 +83,7 @@ h2 {
 }
 
 .logo {
-  height: 85px; /* Adjust height */
+  height: 60px; /* Adjust height */
   width: auto; /* Maintain aspect ratio */
 }
 
@@ -93,6 +93,14 @@ a.nav-link {
 
 a.nav-link {
   color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes the default black icon white */
+}
+
+.navbar-toggler {
+  border: 2px solid white !important;
 }
 
 /* Style for active nav link */
@@ -131,7 +139,7 @@ S #contact {
 #hero-gallery2 {
   background: url("../images/carbon-meets-red.jpg") no-repeat center
     center/cover;
-  background-color: rgba(158, 26, 26, 0.5);
+  background-color: rgba(100, 87, 87, 0.9);
   background-blend-mode: overlay;
 }
 
@@ -190,7 +198,6 @@ S #contact {
 }
 
 main {
-  flex: 1;
   font-family: var(--primary-font);
 }
 
@@ -198,16 +205,18 @@ main {
   padding-bottom: 15px;
 }
 
-#booking-form {
+.booking-form {
   background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
   color: white;
-  background-color: rgba(158, 26, 26, 0.5);
+  padding-left: 0;
+  margin-right: 0;
+  background-color: rgba(70, 61, 61, 0.9);
   background-blend-mode: overlay;
 }
 
 /* Success section */
-#success {
+.success {
   padding-top: 100px;
   background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
@@ -341,5 +350,14 @@ table {
   .address {
     text-align: start;
     padding: 0 0 0 170px;
+  }
+}
+
+/* larger devices (laptops, desktops 1440px and up) */
+@media screen and (min-width: 1440px) {
+  /* Make all service cards same height for consistancy */
+  .address {
+    text-align: start;
+    padding: 0 0 0 257px;
   }
 }

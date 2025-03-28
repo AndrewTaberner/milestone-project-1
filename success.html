@@ -52,54 +52,71 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="assets/images/logo-(3).png"
-            alt="gt elite logo"
-            class="logo"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Our range</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quote.html">Request a quote</a>
-            </li>
-          </ul>
+    <header>
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" aria-label="logo" href="index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="gt elite logo"
+              class="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-label="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-label="our range" href="gallery.html"
+                  >Our range</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-label="contact us"
+                  href="index.html#contact"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-label="request a quote"
+                  href="quote.html"
+                  >Request a quote</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- success message for users who successfully submit a form -->
-    <main id="success" class="container section text-center">
+    <main id="success" class="container section text-center success">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
           <h1 class="display-6" id="thank-you">Thank you!</h1>
           <p class="lead">Your form has been submitted successfully!</p>
-          <a href="index.html" class="btn custom-button-outline mb-5"
+          <a
+            aria-label="return to home page"
+            href="index.html"
+            class="btn custom-button-outline mb-5"
             >Return to the home page</a
           >
         </div>
@@ -125,10 +142,18 @@
               PR1 9DF
               <br />
               <i class="fa-solid fa-phone"></i
-              ><a href="tel:01772654321" class="phone-link">01772 654321</a
+              ><a
+                aria-label="phone link"
+                href="tel:01772654321"
+                class="phone-link"
+                >01772 654321</a
               ><br />
               <i class="fa-regular fa-envelope"></i>
-              <a href="mailto: info@gtelite-hq.com" class="email-link">
+              <a
+                aria-label="email link"
+                href="mailto: info@gtelite-hq.com"
+                class="email-link"
+              >
                 info@gtelite-hq.com</a
               >
             </address>
@@ -171,7 +196,7 @@
         </div>
       </div>
       <div>
-        <ul id="social-networks">
+        <ul id="social-networks" class="social-networks">
           <li>
             <a
               href="https://www.facebook.com/"
