@@ -132,19 +132,19 @@ S #contact {
 #hero-home {
   background: url("../images/lamborghini-aventador-roadster-ta.webp") no-repeat
     center center/cover;
-  background-color: rgba(158, 26, 26, 0.5);
+  background-color: rgba(70, 61, 61, 0.9);
   background-blend-mode: overlay;
 }
 
 #hero-gallery {
   background: url("../images/maserati.jpg") no-repeat center center/cover;
-  background-color: rgba(158, 26, 26, 0.5);
+  background-color: rgba(70, 61, 61, 0.9);
   background-blend-mode: overlay;
 }
 
 #hero-gallery1 {
   background: url("../images/copper-mcLaren.jpg") no-repeat center center/cover;
-  background-color: rgba(158, 26, 26, 0.5);
+  background-color: rgba(70, 61, 61, 0.9);
   background-blend-mode: overlay;
 }
 
@@ -205,7 +205,7 @@ S #contact {
   padding-bottom: 5px;
 }
 #quote {
-  /* background-color: rgba(158, 26, 26, 0.5); */
+  background-color: rgba(70, 61, 61, 0.9);
   padding-top: 97px;
 }
 
