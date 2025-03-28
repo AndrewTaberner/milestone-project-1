@@ -116,6 +116,18 @@ S #contact {
   text-decoration: underline; /* Optional: adds an underline effect */
 }
 
+/* Carousel Section */
+.carousel-item {
+  height: 100vh; /* Full screen height */
+  background-size: cover;
+  background-position: center;
+}
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
 /* Hero Section */
 #hero-home {
   background: url("../images/lamborghini-aventador-roadster-ta.webp") no-repeat
