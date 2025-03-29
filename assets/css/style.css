@@ -220,8 +220,7 @@ main {
   background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
   color: white;
-  padding-left: 0;
-  margin-right: 0;
+  padding: 0 15px;
   background-color: #463d3de6;
   background-blend-mode: overlay;
 }
@@ -231,6 +230,10 @@ main {
   padding-top: 100px;
   background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
+  color: white;
+}
+
+.display-6 {
   color: white;
 }
 
