@@ -358,12 +358,16 @@ table {
   }
 }
 
-/* larger devices (laptops, 1024px and up) */
+/* At 1024px and up, remove unwanted side padding */
 @media screen and (min-width: 1024px) {
-  /* Make all service cards same height for consistancy */
-  .address {
-    text-align: start;
-    padding: 0 0 0 170px;
+  .container1,
+  .booking-form {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
