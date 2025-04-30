@@ -140,7 +140,6 @@
                     name="event-type"
                     required
                   >
-                    <!-- Dropdown menu list -->
                     <option value="" selected>Select</option>
                     <option value="lamborghini">Lamborghini</option>
                     <option value="laserati">Maserati Gran-Tourismo</option>
@@ -164,9 +163,20 @@
                 </div>
               </div>
 
-              <button type="submit" class="btn custom-button-outline mb-1">
-                Submit request
-              </button>
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-light mb-2">
+                  Submit Request
+                </button>
+                <br />
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#promoModal"
+                >
+                  View Promo Video
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -298,5 +308,49 @@
       src="https://kit.fontawesome.com/f66b72af47.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Promo Video Modal -->
+    <div
+      class="modal fade"
+      id="promoModal"
+      tabindex="-1"
+      aria-labelledby="promoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="promoModalLabel">
+              GT Elite Promo Video
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/b2TUtrB7FTc"
+                title="GT Elite Promo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const promoModal = document.getElementById("promoModal");
+      const promoIframe = promoModal.querySelector("iframe");
+
+      promoModal.addEventListener("hidden.bs.modal", function () {
+        // Pause video by resetting src
+        const iframeSrc = promoIframe.src;
+        promoIframe.src = iframeSrc;
+      });
+    </script>
   </body>
 </html>
