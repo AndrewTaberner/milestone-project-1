@@ -51,51 +51,52 @@ h2,
   text-align: center;
 }
 
-/* Booking Form Container */
+/* Booking Form Container with Fullscreen Background */
 .booking-form {
-  background-image: url("../images/form-bg.jpg");
+  background-image: url("../images/form-bg.jpg"); /* Update path if needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* full screen height */
+  min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 60px 30px;
+  padding: 60px 15px;
 }
 
-/* Form overlay for readability */
-.booking-form form {
-  background-color: rgba(0, 0, 0, 0.4);
+/* Overlay to make form readable */
+.form-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
-  border-radius: 10px;
-  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Form field styles */
-.booking-form .form-label {
+.form-label {
   font-weight: 500;
   color: #fff;
 }
 
-.booking-form .form-control,
-.booking-form .form-select {
+.form-control,
+.form-select {
   border-radius: 5px;
-  border: none;
   padding: 10px;
+  border: none;
 }
 
 /* Submit button */
-.booking-form .btn {
+.btn-light {
   background-color: #fff;
   color: #000;
   font-weight: bold;
   padding: 10px 20px;
-  border: none;
   transition: background-color 0.3s ease;
+  border: none;
 }
 
-.booking-form .btn:hover {
+.btn-light:hover {
   background-color: #ddd;
 }
 
@@ -105,7 +106,7 @@ h2,
     padding: 30px 15px;
   }
 
-  .booking-form form {
+  .form-overlay {
     padding: 20px;
   }
 }
