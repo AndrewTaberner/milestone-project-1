@@ -100,6 +100,21 @@ h2,
   background-color: #ddd;
 }
 
+.custom-button-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button-outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .booking-form {
