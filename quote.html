@@ -35,7 +35,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <style>
+      /* Sticky Footer Fix */
+      html,
       body {
+        height: 100%;
         margin: 0;
       }
 
@@ -47,6 +50,10 @@
 
       #main {
         flex: 1;
+      }
+
+      #footer {
+        margin-top: auto;
       }
     </style>
   </head>
@@ -217,121 +224,122 @@
           </div>
         </section>
       </main>
-    </div>
 
-    <!-- Footer section -->
-    <footer id="footer">
-      <div class="container section">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h2 class="display-6">Contact us!</h2>
-          </div>
-          <!-- Contact info -->
-          <div id="contact" class="col-12 col-md-6">
-            <h3 class="sub-heading-color">Contact info</h3>
-            <address class="address">
-              <strong
-                ><i class="fa-solid fa-location-dot"></i> GT Elite HQ</strong
-              ><br />
-              75 Higher Croft<br />
-              Preston<br />
-              PR1 9DF
-              <br />
-              <i class="fa-solid fa-phone"></i
-              ><a
-                aria-label="link to phone number"
-                href="tel:01772654321"
-                class="phone-link"
-                >01772 654321</a
-              ><br />
-              <i class="fa-regular fa-envelope"></i>
-              <a
-                aria-label="email link"
-                href="mailto:info@gtelite-hq.com"
-                class="email-link"
-              >
-                info@gtelite-hq.com</a
-              >
-            </address>
-          </div>
+      <!-- Footer section - NOW INSIDE page-wrapper -->
+      <footer id="footer">
+        <div class="container section">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h2 class="display-6">Contact us!</h2>
+            </div>
+            <!-- Contact info -->
+            <div id="contact" class="col-12 col-md-6">
+              <h3 class="sub-heading-color">Contact info</h3>
+              <address class="address">
+                <strong
+                  ><i class="fa-solid fa-location-dot"></i> GT Elite HQ</strong
+                ><br />
+                75 Higher Croft<br />
+                Preston<br />
+                PR1 9DF
+                <br />
+                <i class="fa-solid fa-phone"></i
+                ><a
+                  aria-label="link to phone number"
+                  href="tel:01772654321"
+                  class="phone-link"
+                  >01772 654321</a
+                ><br />
+                <i class="fa-regular fa-envelope"></i>
+                <a
+                  aria-label="email link"
+                  href="mailto:info@gtelite-hq.com"
+                  class="email-link"
+                >
+                  info@gtelite-hq.com</a
+                >
+              </address>
+            </div>
 
-          <!-- Opening times -->
-          <div id="open" class="col-12 col-md-6">
-            <h3 class="sub-heading-color">Opening times</h3>
-            <table>
-              <tr>
-                <th class="text-start px-4">Day</th>
-                <th class="text-start px-4">Open</th>
-                <th class="text-start px-4">Close</th>
-              </tr>
+            <!-- Opening times -->
+            <div id="open" class="col-12 col-md-6">
+              <h3 class="sub-heading-color">Opening times</h3>
+              <table>
+                <tr>
+                  <th class="text-start px-4">Day</th>
+                  <th class="text-start px-4">Open</th>
+                  <th class="text-start px-4">Close</th>
+                </tr>
 
-              <tr>
-                <th class="text-start px-4">Mon</th>
-                <td colspan="1">Closed</td>
-              </tr>
-              <tr>
-                <th class="text-start px-4">Tue - Thur</th>
-                <td>11am</td>
-                <td>11pm</td>
-              </tr>
-              <tr>
-                <th class="text-start px-4">Fri - Sat</th>
-                <td>11am</td>
-                <td>12am</td>
-              </tr>
-              <tr>
-                <th class="text-start px-4">Sun</th>
-                <td>12pm</td>
-                <td>7pm</td>
-              </tr>
-            </table>
+                <tr>
+                  <th class="text-start px-4">Mon</th>
+                  <td colspan="1">Closed</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">Tue - Thur</th>
+                  <td>11am</td>
+                  <td>11pm</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">Fri - Sat</th>
+                  <td>11am</td>
+                  <td>12am</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">Sun</th>
+                  <td>12pm</td>
+                  <td>7pm</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <ul id="social-networks" class="social-networks">
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our Facebook page (opens in a new tab)"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.x.com/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our X page (opens in a new tab)"
-            >
-              <i class="fa-brands fa-x-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our YouTube page (opens in a new tab)"
-            >
-              <i class="fa-brands fa-youtube-square"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our Instagram page (opens in a new tab)"
-            >
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+        <div>
+          <ul id="social-networks" class="social-networks">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.x.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our X page (opens in a new tab)"
+              >
+                <i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our YouTube page (opens in a new tab)"
+              >
+                <i class="fa-brands fa-youtube-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Closing page-wrapper div -->
 
     <!-- Bootstrap JS-->
     <script

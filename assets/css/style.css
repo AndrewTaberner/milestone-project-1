@@ -1,6 +1,7 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Orbitron:wght@400..900&display=swap");
 
+/* Core Layout Fixes */
 html,
 body {
   height: 100%;
@@ -8,17 +9,26 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
+  background: url("../images/carbon-meets-red.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  font-family: var(--primary-font);
 }
 
 .page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 #main {
   flex: 1;
+  padding-bottom: 15px;
 }
 
 /* CSS Variables */
@@ -31,14 +41,7 @@ body {
   --highlight-color-light: #424242;
 }
 
-body {
-  background: url("../images/carbon-meets-red.jpg") no-repeat center
-    center/cover;
-  background-attachment: fixed;
-}
-
 /* Global styles */
-
 .min-vh-100 {
   font-family: var(--primary-font);
   display: flex;
@@ -100,9 +103,10 @@ h2 {
 /* Navbar */
 #navbar {
   background-color: #424242;
-  box-shadow: 0px 4px 10px black; /* Shadow on bottom */
+  box-shadow: 0px 4px 10px black;
   position: fixed;
-  z-index: 1000; /* Higher than the carousel */
+  width: 100%;
+  z-index: 1000;
 }
 
 #navbar .container {
@@ -110,52 +114,51 @@ h2 {
 }
 
 .logo {
-  height: 50px; /* Adjust height */
-  width: auto; /* Maintain aspect ratio */
+  height: 50px;
+  width: auto;
 }
 
 a.nav-link {
   font-family: var(--primary-font);
-}
-
-a.nav-link {
   color: #ffffff;
 }
 
 .navbar-toggler-icon {
-  filter: invert(1); /* Makes the default black icon white */
+  filter: invert(1);
 }
 
 .navbar-toggler {
   border: 2px solid white !important;
 }
 
-/* Style for active nav link */
+/* Active nav link */
 nav a.active,
 nav a:focus-visible {
-  color: white !important; /* Makes the active link white */
-  font-weight: bold; /* makes it stand out */
-  text-decoration: underline; /* adds an underline effect */
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
 }
+
 #contact {
-  color: white !important; /* Ensures active links turn white */
-  font-weight: bold; /* Optional: makes it stand out */
-  text-decoration: underline; /* Optional: adds an underline effect */
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Carousel Section */
 .carousel-item {
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
+
 .carousel-caption {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
 }
 
-/* Hero Section */
+/* Hero Sections */
 #hero-home {
   background: url("../images/rimac-nevera.avif") no-repeat center center/cover;
   background-color: rgba(70, 61, 61, 0.5);
@@ -197,20 +200,20 @@ nav a:focus-visible {
 }
 
 .card img {
-  width: 100%; /* Make sure the image takes the full width of the card */
-  height: 150px; /* Set a fixed height */
-  object-fit: cover; /* Ensures images fill the space while maintaining proportions */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 468px;
   width: 270px;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Slightly enlarges the card */
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-footer {
@@ -222,14 +225,15 @@ nav a:focus-visible {
 }
 
 .card-img-top {
-  box-shadow: 0px 5px 5px black; /* Shadow on bottom */
+  box-shadow: 0px 5px 5px black;
 }
 
-/* Request a quote section*/
+/* Form Sections */
 #header {
   font-family: var(--primary-font);
   padding-bottom: 5px;
 }
+
 #quote {
   background-color: rgba(70, 61, 61, 0.5);
   padding-top: 97px;
@@ -242,14 +246,6 @@ nav a:focus-visible {
 #quote + .lead,
 #quote + .lead + p {
   color: white;
-}
-
-main {
-  font-family: var(--primary-font);
-}
-
-#main {
-  padding-bottom: 15px;
 }
 
 .booking-form {
@@ -275,15 +271,31 @@ main {
   color: white;
 }
 
+/* Footer */
 /* Footer / contact */
 #footer {
   font-family: var(--primary-font);
   background-color: #424242;
   color: white;
-  box-shadow: 0px -4px 10px black; /* shadow on top */
+  box-shadow: 0px -4px 10px black;
   text-align: center;
-  position: relative;
-  z-index: 1000; /* Higher than the carousel to allow box shadow to appear */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: auto;
+  z-index: 1000;
+}
+
+#footer .container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#footer .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 table {
@@ -308,24 +320,22 @@ html {
 }
 
 .phone-link {
-  color: white; /* Link is white */
-  /* text-decoration: underline; */
+  color: white;
   transition: color 0.3s ease-in-out;
 }
 
 .phone-link:hover {
-  color: #e0e0e0; /* Change shade on hover */
+  color: #e0e0e0;
   text-decoration: none;
 }
 
 .email-link {
-  color: white; /* Link is white */
-  /* text-decoration: underline; */
+  color: white;
   transition: color 0.3s ease-in-out;
 }
 
 .email-link:hover {
-  color: #e0e0e0; /* Change shade on hover */
+  color: #e0e0e0;
   text-decoration: none;
 }
 
@@ -333,7 +343,7 @@ html {
 #social-networks {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Space between icons */
+  gap: 15px;
   padding: 10px 0;
   list-style: none;
 }
@@ -351,47 +361,41 @@ html {
 
 #social-networks i {
   font-size: 1.8rem;
-  color: white; /* Default icon color */
+  color: white;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Hover Effects - Change icon color. Individual Social Media Color on Hover*/
 #social-networks a:hover i {
   transform: scale(1.2);
   color: #e0e0e0;
 }
+
 .social-networks a {
   text-decoration: none !important;
 }
 
-/* small devices (mobiles, 375px and up) */
+/* Responsive Adjustments */
 @media screen and (min-width: 375px) {
-  /* Make all service cards same height for consistancy */
   .address {
     text-align: start;
     padding: 0 0 0 125px;
   }
 }
 
-/* small devices (mobiles, 425px and up) */
 @media screen and (min-width: 425px) {
-  /* Make all service cards same height for consistancy */
   .address {
     text-align: start;
     padding: 0 0 0 148px;
   }
 }
 
-/* medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* Make all service cards same height for consistancy */
   .address {
     text-align: start;
     padding: 0 0 0 113px;
   }
 }
 
-/* At 1024px and up, remove unwanted side padding */
 @media screen and (min-width: 1024px) {
   .container1,
   .booking-form {
@@ -404,9 +408,7 @@ html {
   }
 }
 
-/* larger devices (laptops, desktops 1440px and up) */
 @media screen and (min-width: 1440px) {
-  /* Make all service cards same height for consistancy */
   .address {
     text-align: start;
     padding: 0 0 0 257px;
