@@ -1,10 +1,30 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Orbitron:wght@400..900&display=swap");
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main {
+  flex: 1;
+}
+
 /* CSS Variables */
 :root {
   --primary-font: "Big Shoulders", sans-serif;
-  --secondary-font: "Orbitron", cursive;
+  --secondary-font: "Orbitron", sans-serif;
   --primary-color: #ffffff;
   --secondary-color: #aa9581;
   --highlight-color: #416a8e;
@@ -23,6 +43,7 @@ body {
   font-family: var(--primary-font);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -111,12 +132,12 @@ a.nav-link {
 
 /* Style for active nav link */
 nav a.active,
-nav a:focus {
+nav a:focus-visible {
   color: white !important; /* Makes the active link white */
   font-weight: bold; /* makes it stand out */
   text-decoration: underline; /* adds an underline effect */
 }
-S #contact {
+#contact {
   color: white !important; /* Ensures active links turn white */
   font-weight: bold; /* Optional: makes it stand out */
   text-decoration: underline; /* Optional: adds an underline effect */
@@ -137,26 +158,26 @@ S #contact {
 /* Hero Section */
 #hero-home {
   background: url("../images/rimac-nevera.avif") no-repeat center center/cover;
-  background-color: rgba(70, 61, 61, 0.9);
+  background-color: rgba(70, 61, 61, 0.5);
   background-blend-mode: overlay;
 }
 
 #hero-gallery {
   background: url("../images/maserati.jpg") no-repeat center center/cover;
-  background-color: rgba(70, 61, 61, 0.9);
+  background-color: rgba(70, 61, 61, 0.5);
   background-blend-mode: overlay;
 }
 
 #hero-gallery1 {
   background: url("../images/copper-mcLaren.jpg") no-repeat center center/cover;
-  background-color: rgba(70, 61, 61, 0.9);
+  background-color: rgba(70, 61, 61, 0.5);
   background-blend-mode: overlay;
 }
 
 #hero-gallery2 {
   background: url("../images/carbon-meets-red.jpg") no-repeat center
     center/cover;
-  background-color: rgba(100, 87, 87, 0.9);
+  background-color: rgba(100, 87, 87, 0.5);
   background-blend-mode: overlay;
 }
 
@@ -210,7 +231,7 @@ S #contact {
   padding-bottom: 5px;
 }
 #quote {
-  background-color: rgba(70, 61, 61, 0.9);
+  background-color: rgba(70, 61, 61, 0.5);
   padding-top: 97px;
 }
 
@@ -272,6 +293,10 @@ table {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .address {
   text-align: start;
   padding: 0 0 0 100px;
@@ -330,16 +355,11 @@ table {
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Hover Effects - Change icon color */
+/* Hover Effects - Change icon color. Individual Social Media Color on Hover*/
 #social-networks a:hover i {
-  transform: scale(1.2); /* Slight zoom effect */
-}
-
-/* Individual Social Media Color on Hover */
-#social-networks a:hover i {
+  transform: scale(1.2);
   color: #e0e0e0;
 }
-
 .social-networks a {
   text-decoration: none !important;
 }
