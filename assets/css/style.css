@@ -11,6 +11,12 @@
   --highlight-color-light: #424242;
 }
 
+body {
+  background: url("../images/carbon-meets-red.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+}
+
 /* Global styles */
 
 .min-vh-100 {
@@ -208,6 +214,15 @@ S #contact {
   padding-top: 97px;
 }
 
+#quote.lead {
+  color: white;
+}
+
+#quote + .lead,
+#quote + .lead + p {
+  color: white;
+}
+
 main {
   font-family: var(--primary-font);
 }
@@ -219,10 +234,8 @@ main {
 .booking-form {
   background: url("../images/carbon-meets-metal.jpg") no-repeat center
     center/cover;
-  color: white;
+  color: rgb(83, 75, 75);
   padding: 0 15px;
-  background-color: #463d3de6;
-  background-blend-mode: overlay;
 }
 
 /* Success section */
